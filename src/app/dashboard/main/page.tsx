@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "By PoolDM",
+    description: "Hola payaso",
+};
 
 export default function MainPage() {
     return (

@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "raw.githubusercontent.com",
       },
+      {
+        protocol: "https",
+        hostname: "scontent.fcix2-1.fna.fbcdn.net",
+      },
     ],
   },
 };

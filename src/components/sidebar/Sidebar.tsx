@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import { IoBrowsersOutline, IoCalculator, IoFootball, IoLogoReact } from 'react-icons/io5';
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeartOutline, IoLogoReact } from 'react-icons/io5';
 import { SidebarMenuItem } from './SidebarMenuItem';
+import Link from 'next/link';
 
 const menuItems = [
     {
@@ -21,6 +22,12 @@ const menuItems = [
         title: 'Pokemons',
         subTitle: 'Generación estática de páginas.'
     },
+    {
+        path: '/dashboard/favorites',
+        icon: <IoHeartOutline size={40} />,
+        title: 'Favoritos',
+        subTitle: 'Global state.'
+    },
 ]
 
 export const Sidebar = () => {
@@ -33,8 +40,8 @@ export const Sidebar = () => {
             {/* <IoLogoReact className="mr-2 text-center" /> */}
 
             <div id="profile" className="px-6 py-10">
-                <p className="text-slate-500">Bienvenido,</p>
-                <a href="#" className="inline-flex space-x-2 items-center">
+                <p className="text-slate-500">Bienvenido, soy</p>
+                <Link href="https://www.linkedin.com/in/pool-a-deza-millones-1b16a6271/" className="inline-flex space-x-2 items-center">
                     <span>
                         <Image className="rounded-full w-8 h-8"
                             src="https://scontent.fcix2-1.fna.fbcdn.net/v/t39.30808-6/434554966_3733860796846708_6538721917424852779_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jcr8aDY1zI0Q7kNvgHD4F6f&_nc_ht=scontent.fcix2-1.fna&oh=00_AfBFQmqtqNPZK9In_fkVp94-chJWjO0fm1_D_Sb4IqH3mQ&oe=663F8AB4"
@@ -46,7 +53,7 @@ export const Sidebar = () => {
                     <span className="text-sm md:text-base font-bold">
                         Pool Deza Millones
                     </span>
-                </a>
+                </Link>
             </div>
 
 

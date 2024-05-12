@@ -27,7 +27,7 @@ export default async function PokemonsPage() {
     const pokemons = await getPokemons(151);
 
     return (
-        <div className="flex flex-col" >
+        <div className='flex flex-col items-center py-8 justify-center min-h-screen from-gray-300 via-greeen-300 to-blue-500 bg-gradient-to-br'>
 
             <span className="text-center p-6 text-7xl tracking-tight font-extrabold lg:text-5xl text-primary-600 dark:text-primary-500">
                 Listado de Pokémon

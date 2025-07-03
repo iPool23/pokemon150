@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "scontent.fcix2-1.fna.fbcdn.net",
       },
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      }
     ],
   },
 };
